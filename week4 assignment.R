@@ -5,4 +5,7 @@ table(STB $Gender)
 
 #상대도수분포표 
 GEN<-table(STB$Gender)
-prop.table(GEN) 
+prop.table(GEN)
+
+#교차표 만들기
+table(STB$Gender, STB$Grade)
