@@ -23,4 +23,4 @@ pie(table(STB$Gender))
 hist(STB$Age,main="Age")
 
 # 박스 플롯
-boxplot(STB$Grade,STB$Age, col="yellow", xlab ="Grade",ylab= "Age")
+boxplot(STB$Grade,STB$Age, col="pink", xlab ="Grade",ylab= "Age")
