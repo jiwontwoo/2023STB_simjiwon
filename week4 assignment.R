@@ -15,3 +15,12 @@ barplot(table(STB$Nationality),xlab ="Nationality (3=Mongolia, 4=China, 5=South 
 
 #가로막대그래프
 barplot(table(STB$`residential area`),horiz=TRUE)
+
+#파이그래프
+pie(table(STB$Gender))
+
+#히스토그램
+hist(STB$Age,main="Age")
+
+# 박스 플롯
+boxplot(STB$Grade,STB$Age, col="yellow", xlab ="Grade",ylab= "Age")
