@@ -11,7 +11,7 @@ prop.table(GEN)
 table(STB$Gender, STB$Grade)
 
 #막대그래프
-barplot(table(STB$Nationality))
+barplot(table(STB$Nationality),xlab ="Nationality (3=Mongolia, 4=China, 5=South Korea)")
 
 #가로막대그래프
 barplot(table(STB$`residential area`),horiz=TRUE)
