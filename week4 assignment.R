@@ -9,3 +9,6 @@ prop.table(GEN)
 
 #교차표 만들기
 table(STB$Gender, STB$Grade)
+
+#막대그래프
+barplot(table(STB$Nationality))
