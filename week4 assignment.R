@@ -12,3 +12,6 @@ table(STB$Gender, STB$Grade)
 
 #막대그래프
 barplot(table(STB$Nationality))
+
+#가로막대그래프
+barplot(table(STB$`residential area`),horiz=TRUE)
