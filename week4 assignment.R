@@ -14,16 +14,16 @@ table(STB$Gender, STB$Grade)
 barplot(table(STB$Nationality),xlab ="Nationality (3=Mongolia, 4=China, 5=South Korea)")
 
 #가로막대그래프
-barplot(table(STB$`residential area`),horiz=TRUE)
+barplot(table(STB$`residential area`),horiz=TRUE,main='Nesidential Area',ylab='6=경기,7=대구,8=서울, 9=울산, 10=인천, 11=충북')
 
 #파이그래프
-pie(table(STB$Gender))
+pie(table(STB$Gender),main='Gender (1=male, 2=female)')
 
 #히스토그램
 hist(STB$Age,main="Age")
 
 # 박스 플롯
-boxplot(STB$Grade,STB$Age, col="pink", xlab ="Grade",ylab= "Age")
+boxplot(STB$Grade,STB$Age, col="pink", xlab ="Grade",ylab= "Age",main='Grade 별 Age')
 
 #산점도
 plot(x=STB$Grade,y=STB$Age,xlab="grade", ylab="age",main="Grade and Age")
