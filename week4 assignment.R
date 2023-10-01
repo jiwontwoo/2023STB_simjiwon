@@ -24,3 +24,6 @@ hist(STB$Age,main="Age")
 
 # 박스 플롯
 boxplot(STB$Grade,STB$Age, col="pink", xlab ="Grade",ylab= "Age")
+
+#산점도
+plot(x=STB$Grade,y=STB$Age,xlab="grade", ylab="age",main="Grade and Age")
