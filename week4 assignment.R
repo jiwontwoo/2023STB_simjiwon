@@ -26,7 +26,7 @@ pie(table(STB$Gender),main='Gender (1=male, 2=female)')
 hist(STB$Age,main="Age")
 
 #step10 박스 플롯
-boxplot(STB$Grade,STB$Age, col="pink", xlab ="Grade",ylab= "Age",main='Grade 별 Age')
+boxplot(STB$Grade,STB$Age, col="pink")
 
 #step10 기술통계
 summary(STB)
