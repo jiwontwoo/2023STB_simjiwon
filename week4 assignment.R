@@ -27,7 +27,7 @@ hist(STB$Age,main="Age")
 
 #step10 박스 플롯
 boxplot(STB$Grade,STB$Age, col="pink")
-
+ 
 #step10 기술통계
 summary(STB)
 
