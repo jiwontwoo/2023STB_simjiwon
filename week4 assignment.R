@@ -25,11 +25,15 @@ pie(table(STB$Gender),main='Gender (1=male, 2=female)')
 #step9 히스토그램
 hist(STB$Age,main="Age")
 
+levels(STB$Grade) <- c("2", "4", "3")
+
 #step10 박스 플롯
-boxplot(STB$Grade,STB$Age, col="pink")
+STB$Grade<-as.factor(STB$Grade)
+plot(STB$Grade,STB$Age, col="pink")
  
 #step10 기술통계
 summary(STB)
 
 #step11 산점도
+STB$Grade <- as.numeric(STB$Grade)
 plot(x=STB$Grade,y=STB$Age,xlab="grade", ylab="age",main="Grade and Age")
