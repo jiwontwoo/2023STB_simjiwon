@@ -12,8 +12,8 @@ searchUrl <- 'https://openapi.naver.com/v1/search/news.xml'
 Client_ID <- 'nqwA9gM8SQdvOBr4p5si'
 Client_Secret <- 'LSZ6_28atW'
 
-query <-URLencode(iconv("경영통계","euc-kr", "UTF-8"))
-url <- paste(searchUrl,"?query=", query, "&display=20",sep="")
+query <- URLencode(iconv("경영통계", to="UTF-8"))
+url <- paste(searchUrl, "?query=", query, "&display=100&start=1&sort=sim", sep="")
 
 doc <- getURL(url, httpheader =c('Content-Type' ="apllication/xml", 'X-Naver-CLient-Id' = Client_ID, 'X-Naver-CLient-Secret' =Client_Secret))
 
