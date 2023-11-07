@@ -31,6 +31,11 @@ foodggd$close_date <- as.integer(foodggd$close_date)
 str(ggdfood)
 
 #.파생변수 만들기
+
+foodshop <- foodshop %>%
+  filter(open_date != '') %>%
+  select(name,type,status,open_date,close_date,address)
+
 #1.status변수
 #table(foodshop$status)
 #영업상태가 영업/폐업이 아닌 것을 제외
